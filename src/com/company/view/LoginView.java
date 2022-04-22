@@ -11,7 +11,7 @@ public class LoginView {
     UserControler userControler = new UserControler();
 
     public LoginView() {
-        System.out.println("Login form");
+        System.out.println("LOGIN FORM");
         System.out.println("Enter your username");
         String username = scanner.nextLine();
         System.out.println("Enter your password");

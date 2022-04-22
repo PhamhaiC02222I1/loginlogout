@@ -22,7 +22,7 @@ public class ProfileView {
         int chooseProfile=scanner.nextInt();
         switch (chooseProfile){
             case 1:lofOut();
-            new Main();
+                new RegisterAndLoginView();
             case 2:
                 new Main();
 

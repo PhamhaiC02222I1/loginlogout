@@ -1,5 +1,7 @@
 package com.company.service.role;
 
+import com.company.model.Product;
+import com.company.model.ProductCategory;
 import com.company.model.Role;
 import com.company.model.RoleName;
 import com.company.config.ConfigReadAndWriteFile;
@@ -27,6 +29,41 @@ public class RoleServiceIMPL implements IRoleService{
     @Override
     public void save(Role role) {
 roleList.add(role);
+    }
+
+    @Override
+    public Role findById(int id) {
+        return null;
+    }
+
+    @Override
+    public void deleteById(int id) {
+
+    }
+
+    @Override
+    public void editById(ProductCategory productCategory) {
+
+    }
+
+    @Override
+    public void editById(Product product) {
+
+    }
+
+    @Override
+    public void sortByName() {
+
+    }
+
+    @Override
+    public void sortByPrice() {
+
+    }
+
+    @Override
+    public Role findProductByName(String name) {
+        return null;
     }
 
     @Override

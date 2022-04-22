@@ -25,10 +25,11 @@ public class RegisterView {
             checkUserName= Pattern.matches("[a-z0-9_-]{6,}",username);
             if (!checkUserName) {
                 System.out.println("UserName failed! please try again!");
-
+                new RegisterAndLoginView();
 
             }else if (userServiceIMPL.existedByUsername(username)){
                 System.out.println("username is existed!try again!");
+                new RegisterAndLoginView();
             }else break;
         }
         System.out.println("Enter password: ");
