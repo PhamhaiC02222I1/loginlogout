@@ -111,9 +111,9 @@ public class ProductView {
             float price = Float.parseFloat(scanner.nextLine());
             System.out.println("Enter ProductCatarogy Name:");
             String ProductCatarogyName = scanner.nextLine();
-//            ProductCategory productCategory=new ProductCategory(ProductCatarogyName);
-//            Product product = new Product(id, name, productFrom, price, productCategory);
-//            productControler.editById(product);
+            ProductCategory productCategory=new ProductCategory(ProductCatarogyName);
+            Product product = new Product(id, name, productFrom, price, productCategory);
+            productControler.editById(product);
             System.out.println(productControler.showListProduct());
             System.out.println("Enter any key to continue Product or Enter QUIT to come back menu: ");
             String backMenu = scanner.nextLine();

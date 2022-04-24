@@ -53,7 +53,7 @@ public class BuyProductView {
     public void productBest(){
         System.out.println("Show Product with the best selling");
         buyProductControler.bestProduct();
-        System.out.println(buyProductControler.showList());
+//        System.out.println(buyProductControler.showList());
         System.out.println("Enter any key to continue create Product or Enter QUIT to come back menu: ");
         String backMenu = scanner.nextLine();
         if(backMenu.equalsIgnoreCase("quit")){

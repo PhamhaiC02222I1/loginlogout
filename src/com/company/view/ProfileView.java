@@ -21,7 +21,7 @@ public class ProfileView {
         System.out.println("2. Back to menu");
         int chooseProfile=scanner.nextInt();
         switch (chooseProfile){
-            case 1:lofOut();
+            case 1:logOut();
                 new RegisterAndLoginView();
             case 2:
                 new Main();
@@ -33,7 +33,7 @@ public class ProfileView {
             new Main();
         }
     }
-    public void lofOut(){
+    public void logOut(){
         UserPrincipalIMPL.userPrincipalList.clear();
         userPrincipalIMPL.findAll();
 

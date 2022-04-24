@@ -57,11 +57,18 @@ public class BuyProductServiceIMPL implements IBuyProductServiceIMPL{
             public int compare(BuyProduct o1, BuyProduct o2) {
                 if (o1.getAmount()> o2.getAmount()){
                     return -1;
+                }else return 1;
+
                 }
-                return 1;
-            }
+
+
 
         });
+        for (int i = 0; i < buyProductList.size(); i++) {
+            if (buyProductList.get(i).getAmount() > 5) {
+                System.out.println(buyProductList.get(i));
+            }
+        }
 
     }
 

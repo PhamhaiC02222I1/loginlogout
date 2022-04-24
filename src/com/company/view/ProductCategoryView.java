@@ -66,8 +66,8 @@ public class ProductCategoryView {
 
 
         for (int i = 0; i < productCategoryControler.showListProductCategory().size(); i++) {
-
-            System.out.println(productCategoryControler.showListProductCategory().get(i).getName());
+            System.out.println("Id: "+productCategoryControler.showListProductCategory().get(i).getId());
+            System.out.println("CatarogyName: "+productCategoryControler.showListProductCategory().get(i).getName());
 
             for (int j = 0; j < productCategoryControler.findProductbyName(productCategoryControler.showListProductCategory().get(i).getName()).size() ; j++) {
 

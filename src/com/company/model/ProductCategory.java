@@ -11,6 +11,10 @@ public class ProductCategory implements Serializable {
     public ProductCategory() {
     }
 
+    public ProductCategory(String name) {
+        this.name = name;
+    }
+
     public ProductCategory(int id, String name) {
         this.id = id;
         this.name = name;

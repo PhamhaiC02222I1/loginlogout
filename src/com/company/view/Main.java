@@ -17,7 +17,7 @@ public Main(){
 
 
 if (UserPrincipalIMPL.userPrincipalList.size()==0){
-    new LoginView();
+    new RegisterAndLoginView();
 
 }
     List<UserPrincipal> userPrincipalList= UserPrincipalIMPL.userPrincipalList;
@@ -134,11 +134,11 @@ if (UserPrincipalIMPL.userPrincipalList.size()==0){
             new ProductCategoryView().formCreateProductCatagory();
             break;
         case 18:
-            new ProductCategoryView().showProductByCatagoruName();
+//            new ProductCategoryView().showProductByCatagoruName();
 //new ProductCategoryControler().showListProductCategory();
 //            break;
-//            new ProductCategoryView().formListProductCategory();
-//            break;
+            new ProductCategoryView().formListProductCategory();
+            break;
 
         case 19:
             new ProductCategoryView().formDeleteProductCatagory();

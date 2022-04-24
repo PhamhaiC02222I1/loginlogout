@@ -8,7 +8,8 @@ import com.company.service.Product.ProductServiceIMPL;
 import java.util.List;
 
 public class ProductControler {
-    IProductServiceIMPL productServiceIMPL=new ProductServiceIMPL();
+//    ProductServiceIMPL productServiceIMPL=new ProductServiceIMPL();
+    ProductServiceIMPL productServiceIMPL=new ProductServiceIMPL();
     public List<Product> showListProduct(){
         return productServiceIMPL.findAll();
     }
