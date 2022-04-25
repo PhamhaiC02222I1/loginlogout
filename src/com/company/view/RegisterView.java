@@ -34,6 +34,7 @@ public class RegisterView {
         }
         System.out.println("Enter password: ");
         String password=scanner.nextLine();
+
         System.out.println("Enter your role");
         String role=scanner.nextLine();
         Set<String> strRole=new HashSet<>();

@@ -111,45 +111,112 @@ if (UserPrincipalIMPL.userPrincipalList.size()==0){
                 new Main();
             }
         case 12:
+
+        if (checkAdmin||checkAdmin1){
+//            new ListUserView();
             new ProductView().createProduct();
             break;
-
+        }else {
+            System.out.println("Khong du quyen truy cap");
+            new Main();
+        }
         case 13:
-            new ProductView().showListProduct();
-            break;
+            if (checkAdmin||checkAdmin1){
+                new ProductView().showListProduct();
+                break;
+            }else {
+                System.out.println("Khong du quyen truy cap");
+                new Main();
+            }
+
 
         case 14:
-            new ProductView().formDelete();
-            break;
+            if (checkAdmin||checkAdmin1){
+                new ProductView().formDelete();
+                break;
+            }else {
+                System.out.println("Khong du quyen truy cap");
+                new Main();
+            }
+
 
         case 15:
-            new ProductView().editById();
-            break;
+            if (checkAdmin||checkAdmin1){
+                new ProductView().editById();
+                break;
+
+            }else {
+                System.out.println("Khong du quyen truy cap");
+                new Main();
+            }
 
         case 16:
+            if (checkAdmin||checkAdmin1){
             new ProductView().sortByName();
             break;
 
+        }else {
+            System.out.println("Khong du quyen truy cap");
+            new Main();
+        }
+
+
         case 17:
-            new ProductCategoryView().formCreateProductCatagory();
-            break;
+            if (checkAdmin||checkAdmin1){
+                new ProductCategoryView().formCreateProductCatagory();
+                break;
+
+            }else {
+                System.out.println("Khong du quyen truy cap");
+                new Main();
+            }
+
         case 18:
 //            new ProductCategoryView().showProductByCatagoruName();
 //new ProductCategoryControler().showListProductCategory();
 //            break;
-            new ProductCategoryView().formListProductCategory();
-            break;
+            if (checkAdmin||checkAdmin1){
+                new ProductCategoryView().formListProductCategory();
+                break;
+
+            }else {
+                System.out.println("Khong du quyen truy cap");
+                new Main();
+            }
+
 
         case 19:
-            new ProductCategoryView().formDeleteProductCatagory();
-            break;
+            if (checkAdmin||checkAdmin1){
+                new ProductCategoryView().formDeleteProductCatagory();
+                break;
+
+            }else {
+                System.out.println("Khong du quyen truy cap");
+                new Main();
+            }
+
         case 20:
-            new ProductCategoryView().editById();
-            break;
+            if (checkAdmin||checkAdmin1){
+                new ProductCategoryView().editById();
+                break;
+
+            }else {
+                System.out.println("Khong du quyen truy cap");
+                new Main();
+            }
+
         case 21:
-            new BuyProductView().showListBuyProduct();
-            break;
+            if (checkAdmin||checkAdmin1){
+                new BuyProductView().showListBuyProduct();
+                break;
+
+            }else {
+                System.out.println("Khong du quyen truy cap");
+                new Main();
+            }
+
         case 22:
+
             new ProfileView();
             break;
     }

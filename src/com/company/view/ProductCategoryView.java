@@ -63,18 +63,19 @@ public class ProductCategoryView {
 //    }
 
     public void formListProductCategory() {
-
+int dem=0;
 
         for (int i = 0; i < productCategoryControler.showListProductCategory().size(); i++) {
             System.out.println("Id: "+productCategoryControler.showListProductCategory().get(i).getId());
             System.out.println("CatarogyName: "+productCategoryControler.showListProductCategory().get(i).getName());
 
             for (int j = 0; j < productCategoryControler.findProductbyName(productCategoryControler.showListProductCategory().get(i).getName()).size() ; j++) {
-
+dem++;
                 System.out.println(productCategoryControler.findProductbyName(productCategoryControler.showListProductCategory().get(i).getName()).get(j));
             }
 
         }
+        System.out.println("Tong so san pham : "+dem);
         System.out.println("Enter QUIT to come back menu: ");
         String backMenu = scanner.nextLine();
         if (backMenu.equalsIgnoreCase("quit")) {

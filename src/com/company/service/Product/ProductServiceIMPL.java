@@ -55,8 +55,8 @@ public class ProductServiceIMPL implements IProductServiceIMPL {
     @Override
     public Product findProductByName(String name) {
         for (int i = 0; i < productList.size(); i++) {
-            if (productList.get(i).getName().equalsIgnoreCase(name)) {
-                return productList.get(i);
+            if (name.equals(productList.get(i).getName())) {
+                System.out.println(productList.get(i));
             }
         }
         return null;

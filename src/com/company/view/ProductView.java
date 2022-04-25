@@ -198,7 +198,8 @@ public class ProductView {
         String name = scanner.nextLine();
         if (productControler.findProductByName(name) != null) {
             System.out.println(productControler.findProductByName(name));
-        } else System.out.println("Khong ton tai san pham");
+        }
+//        else System.out.println("Khong ton tai san pham");
         System.out.println("Enter any key to continue find Product or Enter QUIT to come back menu: ");
         String backMenu = scanner.nextLine();
         if (backMenu.equalsIgnoreCase("quit")) {
